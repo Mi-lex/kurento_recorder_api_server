@@ -1,0 +1,13 @@
+version: '3'
+services:
+  recorder:
+    build: ./
+    restart: always
+    network_mode: host
+    environment:
+      - RECORDER_PORT=9000
+      - TELEGRAM_BOT_TOKEN
+      - TELEGRAM_CHAT_ID
+      - AWS_ACCESS_KEY_ID
+      - AWS_SECRET_ACCESS_KEY
+      - S3_REGION

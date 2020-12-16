@@ -1,0 +1,14 @@
+.idea
+.vscode/
+docker-compose.local.yml
+.nvmrc
+*/node_modules
+
+storage/
+
+start_all.sh
+*.log
+.env
+Dockerfile.local
+
+k8s/secrets

@@ -1,0 +1,44 @@
+{
+  "name": "recorder",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
+    "lint": "eslint ./src/ --ignore-pattern internals/scripts",
+    "lint:fix": "eslint ./src/ --ignore-pattern internals/scripts --fix",
+    "lint:watch": "npm run lint --watch"
+  },
+  "author": "ForaSoft",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 12.18.2"
+  },
+  "dependencies": {
+    "aws-sdk": "2.750.0",
+    "bluebird": "3.7.2",
+    "body-parser": "1.19.0",
+    "cors": "2.8.5",
+    "cross-env": "7.0.2",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "express-validation": "3.0.2",
+    "helmet": "3.22.0",
+    "http-status": "^1.4.2",
+    "isomorphic-fetch": "2.2.1",
+    "lodash": "4.17.15",
+    "method-override": "3.0.0",
+    "morgan": "1.10.0",
+    "ps-node": "0.1.6",
+    "uuid": "8.3.0",
+    "winston": "3.2.1",
+    "winston-transport": "4.3.0"
+  },
+  "devDependencies": {
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-base": "14.1.0",
+    "eslint-plugin-import": "2.20.1",
+    "nodemon": "^2.0.4"
+  }
+}
